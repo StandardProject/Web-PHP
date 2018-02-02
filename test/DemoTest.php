@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace KanDisheng\DemoPHP\Test;
 
+use Exception;
 use KanDisheng\DemoPHP\Demo;
 
 /**
@@ -27,6 +28,7 @@ class DemoTest extends BaseTest
 
     /**
      * Test Construct
+     * @throws Exception
      */
     public function testConstruct()
     {
@@ -36,6 +38,7 @@ class DemoTest extends BaseTest
 
     /**
      * Test Demo
+     * @throws Exception
      * @return void
      */
     public function testDemo()
