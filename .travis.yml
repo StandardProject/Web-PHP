@@ -13,6 +13,6 @@ php:
 before_script:
   - composer install
 script:
-  - vendor/bin/phpunit -v
+  - vendor/bin/phpunit --verbose
 after_script:
-  - travis_retry vendor/bin/php-coveralls -v
+  - travis_retry vendor/bin/php-coveralls --verbose
