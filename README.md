@@ -1,6 +1,6 @@
 # KanDisheng DemoPHP
 
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.3-8892BF.svg)](https://php.net/)
+[![Minimum PHP Version](https://img.shields.io/badge/php->=5.3-8892BF.svg)](https://php.net/)
 [![License](https://poser.pugx.org/KanDisheng/DemoPHP/license)](LICENSE)
 [![Download](https://poser.pugx.org/KanDisheng/DemoPHP/downloads)](https://packagist.org/packages/KanDisheng/DemoPHP)
 [![Stable](https://poser.pugx.org/KanDisheng/DemoPHP/version)](https://packagist.org/packages/KanDisheng/DemoPHP)
