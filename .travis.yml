@@ -15,10 +15,10 @@ matrix:
   include:
     - php: 5.3
       dist: precise
+  allow_failures:
+    - php: hhvm
 before_script:
-  - phpenv config-add myconfig.ini
-  - echo 'hhvm.php7.scalar_types = true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
-  - phpenv rehash
+  - if [[ $TRAVIS_PHP_VERSION = "hhvm" ]]; then sudo cat myconfig.ini >> /etc/hhvm/php.ini; fi
   - composer install
 script:
   - vendor/bin/phpunit --verbose
