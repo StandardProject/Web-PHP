@@ -32,11 +32,5 @@ after_success:
   - travis_retry vendor/bin/php-coveralls --verbose
 after_failure:
   - echo "Error"
-before_deploy:
-  - echo "Before Deploy"
-deploy:
-  - echo "Deploy"
-after_deploy:
-  - echo "After Deploy"
 after_script:
   - echo "Success"
