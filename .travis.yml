@@ -18,6 +18,7 @@ matrix:
 before_script:
   - phpenv config-add myconfig.ini
   - echo 'hhvm.php7.scalar_types = true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+  - phpenv rehash
   - composer install
 script:
   - vendor/bin/phpunit --verbose
