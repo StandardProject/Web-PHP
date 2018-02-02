@@ -24,19 +24,35 @@ class Clean
     }
 
     /**
-     * Start
+     * Workbench
      */
-    public static function start()
+    public static function workbench()
     {
-        PHPUnit::clean();
         $removeList = array(
             'workbench'
         );
         $result = FileSystem::remove($removeList);
         if ($result) {
-            Console::printLine('Clean Finished.', 'success');
+            Console::printLine('Clean Workbench Finished.', 'success');
             return;
         }
-        Console::printLine('Clean Error.', 'error');
+        Console::printLine('Clean Workbench Error.', 'error');
+    }
+
+    /**
+     * PHPUnit
+     */
+    public static function phpUnit()
+    {
+        PHPUnit::clean();
+    }
+
+    /**
+     * All
+     */
+    public static function all()
+    {
+        self::workbench();
+        self::phpUnit();
     }
 }

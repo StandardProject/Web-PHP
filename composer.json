@@ -63,19 +63,19 @@
             "composer phpmd"
         ],
         "phpmd": [
-            "KanDisheng\\DemoPHP\\Script\\Clean::start",
+            "KanDisheng\\DemoPHP\\Script\\Clean::workbench",
             "KanDisheng\\DemoPHP\\Script\\RemoveRule::start",
             "\"vendor/bin/phpmd\" autoload.php,interface,class,script,test,test_case text cleancode,codesize,controversial,design,naming,unusedcode"
         ],
         "phpcs": [
-            "KanDisheng\\DemoPHP\\Script\\Clean::start",
+            "KanDisheng\\DemoPHP\\Script\\Clean::workbench",
             "\"vendor/bin/phpcs\" autoload.php interface class script test test_case --standard=PSR2"
         ],
         "phpcbf": [
-            "KanDisheng\\DemoPHP\\Script\\Clean::start",
+            "KanDisheng\\DemoPHP\\Script\\Clean::workbench",
             "\"vendor/bin/phpcbf\" autoload.php interface class script test test_case --standard=PSR2"
         ],
         "phpunit": "KanDisheng\\DemoPHP\\Script\\PHPUnit::start",
-        "clean": "KanDisheng\\DemoPHP\\Script\\Clean::start"
+        "clean": "KanDisheng\\DemoPHP\\Script\\Clean::all"
     }
 }
