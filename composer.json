@@ -1,0 +1,71 @@
+{
+    "name": "kandisheng/demophp",
+    "type": "library",
+    "license": "Apache-2.0",
+    "homepage": "http://www.kandisheng.com",
+    "description": "KanDisheng DemoPHP",
+    "keywords": [
+        "KanDisheng",
+        "DemoPHP",
+        "PHP"
+    ],
+    "support": {
+        "issues": "https://github.com/KanDisheng/DemoPHP/issues",
+        "source": "https://github.com/KanDisheng/DemoPHP"
+    },
+    "authors": [
+        {
+            "name": "Candison November",
+            "role": "Founder",
+            "email": "kandisheng@163.com",
+            "homepage": "http://www.kandisheng.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "KanDisheng\\DemoPHP\\": [
+                "interface",
+                "class"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KanDisheng\\DemoPHP\\Test\\": "test",
+            "KanDisheng\\DemoPHP\\Script\\": "script"
+        }
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "phpmd/phpmd": "*",
+        "squizlabs/php_codesniffer": "*",
+        "satooshi/php-coveralls": "*",
+        "CodeMommy/TaskPHP": "*"
+    },
+    "scripts": {
+        "environment": [
+            "composer -V",
+            "php -v",
+            "php -m"
+        ],
+        "update-project": [
+            "git pull",
+            "composer self-update",
+            "composer update"
+        ],
+        "test": [
+            "composer phpunit",
+            "composer phpcbf",
+            "composer phpcs",
+            "composer phpmd"
+        ],
+        "phpmd": "\"vendor/bin/phpmd\" autoload.php,interface,class,script,test,test_case text cleancode,codesize,controversial,design,naming,unusedcode",
+        "phpcs": "\"vendor/bin/phpcs\" autoload.php interface class script test test_case --standard=PSR2",
+        "phpcbf": "\"vendor/bin/phpcbf\" autoload.php interface class script test test_case --standard=PSR2",
+        "phpunit": "KanDisheng\\DemoPHP\\Script\\PHPUnit::start",
+        "clean": "KanDisheng\\DemoPHP\\Script\\Clean::start"
+    }
+}
