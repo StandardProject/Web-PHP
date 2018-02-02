@@ -11,11 +11,10 @@ php:
   - 7.1
   - 7.2
   - hhvm
+      php7:
+        scalar_types: true
   - nightly
   - hhvm-nightly
-hhvm:
-  php7:
-    scalar_types: true
 before_script:
   - composer install
 script:
