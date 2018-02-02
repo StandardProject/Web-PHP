@@ -1,8 +1,6 @@
 language: php
-matrix:
-  include:
-    - php: 5.3
-      dist: precise
+dist: trusty
+sudo: required
 php:
   - 5.4
   - 5.5
@@ -10,11 +8,13 @@ php:
   - 7.0
   - 7.1
   - 7.2
-  - hhvm
-      php7:
-        scalar_types: true
   - nightly
   - hhvm-nightly
+  - hhvm
+matrix:
+  include:
+    - php: 5.3
+      dist: precise
 before_script:
   - composer install
 script:
