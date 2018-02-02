@@ -39,7 +39,7 @@
         "php": ">=5.3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "*",
+        "phpunit/phpunit": "<7.0.0",
         "phpmd/phpmd": "*",
         "squizlabs/php_codesniffer": "*",
         "satooshi/php-coveralls": "*",
