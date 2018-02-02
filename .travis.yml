@@ -16,6 +16,7 @@ matrix:
     - php: 5.3
       dist: precise
 before_script:
+  - phpenv config-add php.ini
   - composer install
 script:
   - vendor/bin/phpunit --verbose
