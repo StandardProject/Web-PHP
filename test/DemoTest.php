@@ -5,8 +5,6 @@
  * @author Candison November <www.kandisheng.com>
  */
 
-declare(strict_types=1);
-
 namespace KanDisheng\DemoPHP\Test;
 
 use KanDisheng\DemoPHP\Demo;
