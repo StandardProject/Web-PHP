@@ -7,16 +7,17 @@
 
 declare(strict_types=1);
 
-namespace KanDisheng\DemoPHP\Test;
+namespace KanDisheng\Test;
 
 use Exception;
+use CodeMommy\DevelopPHP\PHPUnitBase;
 use KanDisheng\DemoPHP\Demo;
 
 /**
  * Class DemoTest
- * @package KanDisheng\DemoPHP\Test
+ * @package KanDisheng\Test
  */
-class DemoTest extends BaseTest
+class DemoTest extends PHPUnitBase
 {
     /**
      * DemoTest constructor.
