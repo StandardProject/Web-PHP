@@ -23,6 +23,7 @@
     ],
     "autoload": {
         "psr-4": {
+            "KanDisheng\\DemoPHP\\Library\\": "library",
             "KanDisheng\\DemoPHP\\": [
                 "interface",
                 "class"
