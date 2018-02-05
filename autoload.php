@@ -11,8 +11,8 @@ use KanDisheng\DemoPHP\Library\Autoload;
 
 $autoloaDirectory = array(
     'library' => 'KanDisheng\\DemoPHP\\Library',
-    'class' => 'KanDisheng\\DemoPHP',
-    'interface' => 'KanDisheng\\DemoPHP'
+    'interface' => 'KanDisheng\\DemoPHP',
+    'class' => 'KanDisheng\\DemoPHP'
 );
 
 Autoload::directory($autoloaDirectory);
