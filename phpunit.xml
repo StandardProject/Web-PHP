@@ -7,8 +7,11 @@
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./interface</directory>
+            <directory suffix=".php">./library</directory>
             <directory suffix=".php">./class</directory>
+            <exclude>
+                <file>./library/Autoload.php</file>
+            </exclude>
         </whitelist>
     </filter>
     <logging>
